@@ -26,11 +26,14 @@ const CustomErrors = {
   USER_NOT_FOUND_ERROR: {
     MESSAGE: 'User not found',
   },
+  ANIMAL_NOT_FOUND_ERROR: {
+    MESSAGE: 'Animal not found',
+  },
   BREED_NOT_FOUND_ERROR: {
     MESSAGE: 'Breed not found',
   },
   SHOP_NOT_FOUND_ERROR: {
-    MESSAGE: 'Breed not found',
+    MESSAGE: 'Shop not found',
   },
   NOT_VALID_ID_ERROR: {
     MESSAGE: 'Not valid id',
@@ -46,6 +49,21 @@ const CustomErrors = {
   },
   MISSING_BREED_NAME_ERROR: {
     MESSAGE: 'The breed name is path is mandatory',
+  },
+  MISSING_PRICE_ANIMAL_ERROR: {
+    MESSAGE: 'The breed name is path is mandatory',
+  },
+  MISSING_ANIMAL_ERROR: {
+    MESSAGE: 'The breed name is path is mandatory',
+  },
+  MISSING_SHOP_ERROR: {
+    MESSAGE: 'The shop path is mandatory',
+  },
+  MISSING_QUANTITY_ERROR: {
+    MESSAGE: 'The quantity path is mandatory',
+  },
+  MISSING_BREED_ERROR: {
+    MESSAGE: 'The breed path is mandatory',
   },
   MISSING_SHOP_NAME_ERROR: {
     MESSAGE: 'The breed name is path is mandatory',

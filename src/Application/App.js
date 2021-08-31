@@ -1,7 +1,9 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
-const { UserController, BreedController, ShopController } = require('../modules');
+const {
+  UserController, BreedController, ShopController, AnimalController,
+} = require('../modules');
 
 const App = express();
 App.use(cors());
@@ -15,5 +17,6 @@ require('../config/database.config');
 App.use(UserController);
 App.use(BreedController);
 App.use(ShopController);
+App.use(AnimalController);
 
 module.exports = App;
