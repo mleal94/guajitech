@@ -1,0 +1,40 @@
+{
+  "name": "guajitech",
+  "version": "1.0.0",
+  "description": "Guajitech challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --exec node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mleal94/guajitech.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "MongoDB",
+    "Guajitech"
+  ],
+  "author": "Mauricio Leal Aguilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mleal94/guajitech/issues"
+  },
+  "homepage": "https://github.com/mleal94/guajitech#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.13.8",
+    "morgan": "^1.10.0",
+    "validator": "^13.6.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "eslint": "^7.8.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
