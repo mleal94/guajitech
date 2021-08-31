@@ -26,11 +26,20 @@ const CustomErrors = {
   USER_NOT_FOUND_ERROR: {
     MESSAGE: 'User not found',
   },
+  BREED_NOT_FOUND_ERROR: {
+    MESSAGE: 'Breed not found',
+  },
   NOT_VALID_ID_ERROR: {
     MESSAGE: 'Not valid id',
   },
   USER_CREATION_ERROR: {
     MESSAGE: 'Something was wrong in user creation',
+  },
+  BREED_DUPLICATION_ERROR: {
+    MESSAGE: 'This animal breed already exist',
+  },
+  MISSING_BREED_NAME_ERROR: {
+    MESSAGE: 'The breed name is path is mandatory',
   },
 
 };
