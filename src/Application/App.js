@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
-const { UserController, BreedController } = require('../modules');
+const { UserController, BreedController, ShopController } = require('../modules');
 
 const App = express();
 App.use(cors());
@@ -14,5 +14,6 @@ require('../config/database.config');
 // API Routing
 App.use(UserController);
 App.use(BreedController);
+App.use(ShopController);
 
 module.exports = App;

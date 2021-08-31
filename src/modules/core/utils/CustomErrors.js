@@ -29,6 +29,9 @@ const CustomErrors = {
   BREED_NOT_FOUND_ERROR: {
     MESSAGE: 'Breed not found',
   },
+  SHOP_NOT_FOUND_ERROR: {
+    MESSAGE: 'Breed not found',
+  },
   NOT_VALID_ID_ERROR: {
     MESSAGE: 'Not valid id',
   },
@@ -38,7 +41,13 @@ const CustomErrors = {
   BREED_DUPLICATION_ERROR: {
     MESSAGE: 'This animal breed already exist',
   },
+  SHOP_DUPLICATION_ERROR: {
+    MESSAGE: 'This animal breed already exist',
+  },
   MISSING_BREED_NAME_ERROR: {
+    MESSAGE: 'The breed name is path is mandatory',
+  },
+  MISSING_SHOP_NAME_ERROR: {
     MESSAGE: 'The breed name is path is mandatory',
   },
 
