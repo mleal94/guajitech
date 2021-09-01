@@ -5,6 +5,12 @@ const CustomErrors = {
   EXIST_EMAIL_ERROR: {
     MESSAGE: 'This email is used by other user',
   },
+  MISSING_TOKEN_ERROR: {
+    MESSAGE: 'No token provided',
+  },
+  INVALID_TOKEN_ERROR: {
+    MESSAGE: 'Invalid token provided',
+  },
   MISSING_PASSWORD_ERROR: {
     MESSAGE: 'The password is a mandatory path',
   },
@@ -29,6 +35,9 @@ const CustomErrors = {
   ANIMAL_NOT_FOUND_ERROR: {
     MESSAGE: 'Animal not found',
   },
+  ANIMAL_NON_STOCK_ERROR: {
+    MESSAGE: 'Out of stock animal',
+  },
   BREED_NOT_FOUND_ERROR: {
     MESSAGE: 'Breed not found',
   },
@@ -40,6 +49,15 @@ const CustomErrors = {
   },
   NOT_VALID_ID_ERROR: {
     MESSAGE: 'Not valid id',
+  },
+  MISSING_ANIMAL_TO_BUY: {
+    MESSAGE: 'The animal must be specified',
+  },
+  MISSING_PET_NAME_TO_BUY: {
+    MESSAGE: 'The pet name must be specified',
+  },
+  MISSING_USER_TO_BUY: {
+    MESSAGE: 'The user must be specified',
   },
   USER_CREATION_ERROR: {
     MESSAGE: 'Something was wrong in user creation',

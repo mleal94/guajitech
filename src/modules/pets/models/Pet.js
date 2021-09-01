@@ -6,9 +6,9 @@ const Pet = new Schema({
     required: true,
     trim: true,
   },
-  breed: {
+  owner: {
     type: Schema.Types.ObjectId,
-    ref: 'Breed',
+    ref: 'User',
     required: true,
   },
   animal: {

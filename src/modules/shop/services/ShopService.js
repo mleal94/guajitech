@@ -1,6 +1,7 @@
 const { DEFAULT_PROJECTIONS } = require('../constanst');
 const CustomErrors = require('../../core/utils/CustomErrors');
 const Shop = require('../models');
+const Pet = require('../../pets/models');
 
 class ShopService {
   async create(req, res) {
@@ -68,6 +69,25 @@ class ShopService {
       }
       const result = await Shop.find(query, DEFAULT_PROJECTIONS);
       return res.status(200).json(result);
+    } catch (e) {
+      return res.status(500).json({ message: e.message });
+    }
+  }
+
+  async buyAnimal(req, res) {
+    try {
+      const { animal, user, body: { name } } = req;
+      const pet = new Pet({
+        animal,
+        owner: user,
+        name,
+      });
+      const petDb = await pet.save();
+      const filter = {
+        _id: petDb._id,
+      };
+      const purchase = await Pet.findOne(filter, DEFAULT_PROJECTIONS).lean();
+      return res.status(200).json(purchase);
     } catch (e) {
       return res.status(500).json({ message: e.message });
     }
