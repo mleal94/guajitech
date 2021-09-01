@@ -35,6 +35,9 @@ const CustomErrors = {
   SHOP_NOT_FOUND_ERROR: {
     MESSAGE: 'Shop not found',
   },
+  PET_NOT_FOUND_ERROR: {
+    MESSAGE: 'Pet not found',
+  },
   NOT_VALID_ID_ERROR: {
     MESSAGE: 'Not valid id',
   },
